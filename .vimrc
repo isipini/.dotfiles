@@ -7,6 +7,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+inoremap jj <esc>
 call plug#begin()
 Plug 'preservim/NERDTree'
 call plug#end()
