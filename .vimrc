@@ -9,7 +9,6 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 
-
 noremap o o<esc>
 noremap O O<esc>
 
@@ -22,6 +21,9 @@ call plug#begin()
 Plug 'preservim/NERDTree'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
+
 call plug#end()
 
 let g:UltiSnipsExpandTrigger="<tab>"
