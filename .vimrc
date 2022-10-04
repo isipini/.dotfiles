@@ -11,10 +11,10 @@ inoremap jj <esc>
 nnoremap <F2> :NERDTreeToggle<cr>
 call plug#begin()
 Plug 'preservim/NERDTree'
-Plugin 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
+call plug#end()
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-tab>"
 
-call plug#end()
