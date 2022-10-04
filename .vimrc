@@ -15,6 +15,6 @@ Plug 'SirVer/ultisnips'
 call plug#end()
 
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<ALT-j>"
+let g:UltiSnipsJumpBackwardTrigger="<ALT-k>"
 
