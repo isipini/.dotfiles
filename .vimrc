@@ -17,10 +17,7 @@ noremap O O<esc>
 
 inoremap jj <esc>
 nnoremap <F2> :NERDTreeToggle<cr>
-nnoremap <C-A-J> <C-W><C-J>
-nnoremap <C-A-K> <C-W><C-K>
-nnoremap <C-A-L> <C-W><C-L>
-nnoremap <C-A-H> <C-W><C-H>
+nnoremap  <F8> <C-W><C-L>
 
 
 call plug#begin()
