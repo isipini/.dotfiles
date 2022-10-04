@@ -10,7 +10,9 @@ endif
 
 
 noremap o o<esc>
-noremap O o<esc>
+noremap O O<esc>
+
+
 
 inoremap jj <esc>
 nnoremap <F2> :NERDTreeToggle<cr>
