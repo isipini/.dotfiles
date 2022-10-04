@@ -1,4 +1,5 @@
 set relativenumber
+set scrolloff=10
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -9,4 +10,3 @@ endif
 call plug#begin()
 Plug 'preservim/NERDTree'
 call plug#end()
-PlugInstall
