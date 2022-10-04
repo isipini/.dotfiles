@@ -17,10 +17,10 @@ noremap O O<esc>
 
 inoremap jj <esc>
 nnoremap <F2> :NERDTreeToggle<cr>
-nnoremap <A-J> <C-W><C-J>
-nnoremap <A-K> <C-W><C-K>
-nnoremap <A-L> <C-W><C-L>
-nnoremap <A-H> <C-W><C-H>
+nnoremap <ALT-J> <C-W><C-J>
+nnoremap <ALT-K> <C-W><C-K>
+nnoremap <ALT-L> <C-W><C-L>
+nnoremap <ALT-H> <C-W><C-H>
 
 call plug#begin()
 Plug 'preservim/NERDTree'
