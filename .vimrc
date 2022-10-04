@@ -8,6 +8,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 inoremap jj <esc>
+nnoremap <F2> :NERDTreeToggle<cr>
 call plug#begin()
 Plug 'preservim/NERDTree'
 call plug#end()
