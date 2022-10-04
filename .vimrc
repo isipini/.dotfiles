@@ -7,6 +7,11 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+
+
+noremap o o<esc>
+noremap O o<esc>
+
 inoremap jj <esc>
 nnoremap <F2> :NERDTreeToggle<cr>
 call plug#begin()
@@ -17,4 +22,6 @@ call plug#end()
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<ALT-j>"
 let g:UltiSnipsJumpBackwardTrigger="<ALT-k>"
+
+let NERDTreeShowHidden=1
 
