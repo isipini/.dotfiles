@@ -1,4 +1,5 @@
 set relativenumber
+set number
 set scrolloff=10
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -16,6 +17,12 @@ noremap O O<esc>
 
 inoremap jj <esc>
 nnoremap <F2> :NERDTreeToggle<cr>
+nnoremap <C-A-J> <C-W><C-J>
+nnoremap <C-A-K> <C-W><C-K>
+nnoremap <C-A-L> <C-W><C-L>
+nnoremap <C-A-H> <C-W><C-H>
+
+
 call plug#begin()
 Plug 'preservim/NERDTree'
 Plug 'SirVer/ultisnips'
@@ -24,6 +31,5 @@ call plug#end()
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<ALT-j>"
 let g:UltiSnipsJumpBackwardTrigger="<ALT-k>"
-
 let NERDTreeShowHidden=1
 
