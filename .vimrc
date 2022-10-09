@@ -11,6 +11,7 @@ endif
 
 inoremap jj <esc>
 noremap <F2> :NERDTreeToggle<cr>
+set hlsearch
 
 call plug#begin()
 Plug 'preservim/NERDTree'
