@@ -9,11 +9,6 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 
-noremap o o<esc>
-noremap O O<esc>
-
-
-
 inoremap jj <esc>
 noremap <F2> :NERDTreeToggle<cr>
 
