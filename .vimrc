@@ -1,6 +1,11 @@
+syntax on
 set relativenumber
 set number
 set scrolloff=10
+set hlsearch
+
+inoremap jj <esc>
+noremap <F2> :NERDTreeToggle<cr>
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -8,9 +13,6 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-inoremap jj <esc>
-noremap <F2> :NERDTreeToggle<cr>
-set hlsearch
 
 call plug#begin()
 Plug 'preservim/NERDTree'
