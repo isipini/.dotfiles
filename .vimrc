@@ -21,6 +21,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 let NERDTreeShowHidden=1
