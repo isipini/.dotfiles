@@ -15,14 +15,13 @@ set hlsearch
 call plug#begin()
 Plug 'preservim/NERDTree'
 Plug 'SirVer/ultisnips'
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 
 call plug#end()
-
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<ALT-j>"
-let g:UltiSnipsJumpBackwardTrigger="<ALT-k>"
 let NERDTreeShowHidden=1
 
