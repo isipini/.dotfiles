@@ -1,4 +1,6 @@
 syntax on
+filetype plugin indent on
+set ts=2 sts= 2 sw=2 et ai si
 set relativenumber
 set number
 set scrolloff=10
@@ -16,6 +18,7 @@ endif
 
 call plug#begin()
 Plug 'preservim/NERDTree'
+let NERDTreeShowHidden=1
 Plug 'SirVer/ultisnips'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
@@ -23,8 +26,6 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
-let NERDTreeShowHidden=1
 
