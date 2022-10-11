@@ -1,6 +1,11 @@
 syntax on
 filetype plugin indent on
 
+"spellcheck
+setlocal spell
+set spelllang=nl,en_gb
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
 "sets
 set ts=2 sts=2 sw=2 et ai si
 set relativenumber
