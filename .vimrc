@@ -6,7 +6,7 @@ set ts=2 sts=2 sw=2 et ai si
 set relativenumber
 set number
 set scrolloff=10
-set hlsearch
+set incsearch
 
 "colors over column 80
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
