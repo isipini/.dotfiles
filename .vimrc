@@ -1,11 +1,19 @@
 syntax on
 filetype plugin indent on
+
+"sets
 set ts=2 sts=2 sw=2 et ai si
 set relativenumber
 set number
 set scrolloff=10
 set hlsearch
 
+"colors over column 80
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
+
+"key mappings
 inoremap jj <esc>
 noremap <F2> :NERDTreeToggle<cr>
 
@@ -15,7 +23,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-
+"plugins
 call plug#begin()
 Plug 'preservim/NERDTree'
 let NERDTreeShowHidden=1
