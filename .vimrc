@@ -17,9 +17,6 @@ filetype plugin indent on
   set scrolloff=10
   set incsearch
 
-" Flagging Unnecessary Whitespace
-  au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
 "colours over column 80 
   highlight OverLength ctermbg=red ctermfg=white guibg=#592929
   match OverLength /\%81v.\+/
