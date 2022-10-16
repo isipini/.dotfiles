@@ -46,6 +46,7 @@ filetype plugin indent on
   Plug 'airblade/vim-gitgutter'
   Plug 'tmhedberg/SimpylFold'
   let g:SimpylFold_docstring_preview = 1
+  Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
   call plug#end()
 
