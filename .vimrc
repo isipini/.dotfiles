@@ -47,5 +47,6 @@ filetype plugin indent on
   Plug 'tmhedberg/SimpylFold'
   let g:SimpylFold_docstring_preview = 1
   Plug 'jayli/vim-easycomplete'
+  Plug 'honza/vim-snippets'
   call plug#end()
 
