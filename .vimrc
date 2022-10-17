@@ -26,7 +26,7 @@ filetype plugin indent on
   inoremap jj <esc>
   noremap <F2> :NERDTreeToggle<cr>
   nnoremap <space> za
-
+  noremap  <F4> :ClangFormat<cr>
 "plugs
   let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
   if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -48,5 +48,11 @@ filetype plugin indent on
   let g:SimpylFold_docstring_preview = 1
   Plug 'jayli/vim-easycomplete'
   let g:easycomplete_tab_trigger="<c-space>"
+  Plug 'rhysd/vim-clang-format'
+  let g:clang_format#detect_style_filea = 1
+  Plug 'dense-analysis/ale'
+  let g:ale_c_clangtidy_checks = 1
+  Plug 'frazrepo/vim-rainbow'
+  let g:rainbow_active = 1
   call plug#end()
 
