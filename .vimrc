@@ -46,5 +46,7 @@ filetype plugin indent on
   Plug 'airblade/vim-gitgutter'
   Plug 'tmhedberg/SimpylFold'
   let g:SimpylFold_docstring_preview = 1
+  Plug 'jayli/vim-easycomplete'
+  let g:easycomplete_tab_trigger="<c-space>"
   call plug#end()
 
