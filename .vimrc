@@ -54,5 +54,6 @@ filetype plugin indent on
   let g:ale_c_clangtidy_checks = 1
   Plug 'frazrepo/vim-rainbow'
   let g:rainbow_active = 1
+  Plug 'lervag/vimtex'
   call plug#end()
 
