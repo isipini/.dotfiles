@@ -1,3 +1,4 @@
+" test
 syntax on
 filetype plugin indent on
 " enable folding
@@ -16,6 +17,15 @@ filetype plugin indent on
   set number
   set scrolloff=10
   set incsearch
+
+ au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix 
 
 "colours over column 80 
   highlight OverLength ctermbg=red ctermfg=white guibg=#592929
